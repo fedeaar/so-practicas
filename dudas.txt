@@ -1,0 +1,16 @@
+guia 1:
+    - revisar ej. 20
+
+guia 3:
+    - revisar ej. 13
+    - revisar ej. 15
+    - revisar ej. 20
+
+guia 4:
+    - revisar ej. 3
+    - revisar ej. 5
+    - en el 17, la segmentación requiere que el programa defina sobre qué segmento opera cada direccionamiento?
+    - en el 9, se reemplazan las paginas compartidas? en tal caso, se avisa a todos los procesos que las utilizan? como?
+
+guia 5:
+    - en el 10, conviene que cada driver sea independiente?
